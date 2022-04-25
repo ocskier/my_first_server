@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar is-flex is-justify-content-center has-background-info"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-white" href="https://bulma.io">
+          <h1>Students App</h1>
+        </a>
+      </div>
+    </nav>
+    <main class="is-flex is-flex-wrap-wrap is-justify-content-space-evenly">
+      <section
+        id="student-list"
+        class="is-flex is-flex-wrap-wrap is-flex-direction-column"
+      ></section>
+      <section class="is-flex">
+        <form
+          id="post-form"
+          class="p-3 is-flex is-flex-wrap-wrap is-flex-direction-column is-justify-content-space-evenly"
+        >
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input
+                id="name-input"
+                class="input is-success"
+                type="text"
+                placeholder="Text input"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Age</label>
+            <div class="control">
+              <input
+                id="age-input"
+                class="input is-success"
+                type="text"
+                placeholder="Text input"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Favorite languages</label>
+            <div class="control">
+              <input
+                id="lang-input"
+                class="input is-info"
+                type="text"
+                placeholder="Text input"
+                value=""
+              />
+            </div>
+          </div>
+          <button class="button is-success custom-submit-btn">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

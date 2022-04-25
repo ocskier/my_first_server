@@ -1,0 +1,47 @@
+body {
+  font-family: 'Lora', serif;
+}
+
+form {
+  flex-grow: 1;
+  border: 2px solid lightblue;
+  margin-top: 1.1em;
+  max-height: 30em;
+}
+
+nav > a {
+  position: absolute;
+  right: 20px;
+  top: 25%;
+}
+
+section:nth-child(1) {
+  order: 0;
+}
+
+section:nth-child(2) {
+  flex-basis: 40%;
+}
+
+.card {
+  min-width: 25rem;
+  margin: 1rem;
+}
+
+.card span {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.custom-submit-btn {
+  font-family: 'Lora', serif !important;
+}
+
+@media only screen and (max-width: 720px) {
+  section:nth-child(1) {
+    order: 1;
+  }
+  section:nth-child(2) {
+    flex-basis: 80%;
+  }
+}
